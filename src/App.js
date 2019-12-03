@@ -1,14 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
-
-import { Button } from 'antd';
-
 import './App.css';
+
+import { Layout } from 'antd';
+
+const { Header, Content, Footer } = Layout;
 
 function App() {
   return (
     <div className="App">
-     <Button type='primary'>AntD Button</Button>
+      <Layout>
+        <Header>HEADER CONTENT</Header>
+        <Content>PORTFOLIO CONTENT</Content>
+        <Footer>USEFUL LINKS</Footer>
+      </Layout>
     </div>
   );
 }
