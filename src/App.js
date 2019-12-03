@@ -2,25 +2,39 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import Header from './components/Header/Header'
+
+import { Layout } from 'antd';
+
+const { Content, Footer } = Layout;
+
+
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {}
+  }
+
+  render(){ 
+    return(
+      <div className="App">
+      <Layout>
+        <Header></Header>
+        {/* <Content>PORTFOLIO CONTENT</Content>
+        <Footer>USEFUL LINKS</Footer> */}
+      </Layout>
     </div>
-  );
+    )
+  }
+
+
+
 }
+
+// function App() {
+//   return (
+
+//   );
+// }
 
 export default App;
