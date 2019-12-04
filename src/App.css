@@ -1,7 +1,19 @@
 /* @import '~antd/dist/antd.css'; */
 
+
+/* light blue - #01E0F3 */
+/* white - #FFFFFF */
+/* black - #000000 */
+/* charcoal - #09091C */
+/* text colors grey - #7C7D7D*/
+
 .App {
   text-align: center;
+}
+
+.content-wrapper {
+  padding: 48px 0;
+  border: 1px solid black;
 }
 
 .App-logo {
@@ -9,7 +21,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
