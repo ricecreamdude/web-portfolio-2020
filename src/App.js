@@ -23,19 +23,17 @@ class App extends React.Component {
   render(){ 
 
     return(
-    <Layout className="App">
-      {/* <Header /> */}
-      <Hero />
-      <About />
-      <Skills />
-      <Projects
-        isLoading={this.state.loading}
-      />
-      {/* Contact Me */}
-      <Row className="content-wrapper"></Row>
-      <Footer />
-    </Layout>
-
+      <Layout className="App">
+        <Hero />
+        <About />
+        <Skills />
+        <Projects
+          isLoading={this.state.loading}
+        />
+        {/* Contact Me */}
+        <Row className="content-wrapper"></Row>
+        <Footer />
+      </Layout>
     )
   }
 }
