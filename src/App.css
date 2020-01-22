@@ -1,19 +1,29 @@
-/* @import '~antd/dist/antd.css'; */
+@import '~antd/dist/antd.css';
 
-
-/* light blue - #01E0F3 */
 /* white - #FFFFFF */
 /* black - #000000 */
 /* charcoal - #09091C */
 /* text colors grey - #7C7D7D*/
 
+
+/* Light Blue: #05C2C9  */
+/* Red: #E31C6E */
+
 .App {
   text-align: center;
 }
 
+.bg-white{
+
+}
+
+.bg-gray{
+
+}
+
 .content-wrapper {
   padding: 48px 0;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .App-logo {
