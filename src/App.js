@@ -23,35 +23,22 @@ class App extends React.Component {
   render(){ 
 
     return(
-      <div className="App">
-      <Layout>
-        <Header />
-        <Hero />
-        <About />
-        <Skills />
-        <Projects
-          isLoading={this.state.loading}
-        />
+    <Layout className="App">
+      {/* <Header /> */}
+      <Hero />
+      <About />
+      <Skills />
+      <Projects
+        isLoading={this.state.loading}
+      />
+      {/* Contact Me */}
+      <Row className="content-wrapper"></Row>
+      <Footer />
+    </Layout>
 
-        {/* Contact Me */}
-        <Row className="content-wrapper">
-
-        </Row>
-        
-        <Footer />
-      </Layout>
-    </div>
     )
   }
-
-
-
 }
 
-// function App() {
-//   return (
-
-//   );
-// }
 
 export default App;

@@ -25,14 +25,14 @@ function Projects(props){
               <Icon type="ellipsis" key="ellipsis" />,
             ]}
           >
-            <Skeleton loading={props.loading} avatar active>
-              <Meta
+            <Skeleton loading={props.loading} active>
+              {/* <Meta
                 avatar={
                   <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
                 }
                 title="Card title"
                 description="This is the description"
-              />
+              /> */}
             </Skeleton>
           </Card>
         </Col>
