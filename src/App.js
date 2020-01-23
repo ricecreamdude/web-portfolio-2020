@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 
 //Components
-import Header from "./components/Header/Header";
+import Navigation from "./components/Navigation/Navigation";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
@@ -23,19 +23,18 @@ class App extends React.Component {
   render(){ 
 
     return(
-    <Layout className="App">
-      {/* <Header /> */}
-      <Hero />
-      <About />
-      <Skills />
-      <Projects
-        isLoading={this.state.loading}
-      />
-      {/* Contact Me */}
-      <Row className="content-wrapper"></Row>
-      <Footer />
-    </Layout>
-
+      <Layout className="App">
+        <Hero />
+        <Navigation />
+        <About />
+        <Skills />
+        <Projects
+          isLoading={this.state.loading}
+        />
+        {/* Contact Me */}
+        <Row className="content-wrapper"></Row>
+        <Footer />
+      </Layout>
     )
   }
 }

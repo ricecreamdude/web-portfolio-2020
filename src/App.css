@@ -4,10 +4,14 @@
 /* black - #000000 */
 /* charcoal - #09091C */
 /* text colors grey - #7C7D7D*/
-
-
 /* Light Blue: #05C2C9  */
 /* Red: #E31C6E */
+
+
+/* Section Header */
+h2 {
+  font-size: 40px;
+}
 
 .App {
   text-align: center;
@@ -32,7 +36,7 @@
 
 .App-header {
   /* background-color: #282c34; */
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
