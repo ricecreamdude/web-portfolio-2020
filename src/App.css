@@ -7,6 +7,12 @@
 /* Light Blue: #05C2C9  */
 /* Red: #E31C6E */
 
+
+/* Section Header */
+h2 {
+  font-size: 40px;
+}
+
 .App {
   text-align: center;
 }

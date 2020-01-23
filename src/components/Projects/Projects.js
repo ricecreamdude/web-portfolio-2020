@@ -12,28 +12,37 @@ function Projects(props){
   let testData = [
     {
       title: "Cleareview",
-      subtitle: "Vue JS / VueX"
+      subtitle: "Vue JS / VueX",
+      thumbUrl: './images/portfolio/pace-thumb.png',
     },
     {
       title: "China Med Device",
-      subtitle: "HTML & CSS"
+      subtitle: "HTML & CSS",
+      thumbUrl: './images/portfolio/pace-thumb.png',
     },
-    {
-      title: "SpooPy Notes",
-      subtitle: "Python / React JS"
-    },
-    {
-      title: "Pynterest",
-      subtitle: "Python / React JS"
-    }
+    // {
+    //   title: "SpooPy Notes",
+    //   subtitle: "Python / React JS"
+    // },
+    // {
+    //   title: "Pynterest",
+    //   subtitle: "Python / React JS"
+    // }
   ];
 
 
+  // https://codepen.io/pen/?&editable=true&editors=001
   let Test = testData.map( (project) => (
-          <div>   
-            <h1>{project.title}</h1>
-            <p>{project.subtitle}</p> 
-          </div>
+    <Card
+    hoverable
+    style={{ width: 400 }}
+    cover={<img alt={ project.title } src={ project.thumbUrl } />}
+  >
+    {/* <div>   
+      <h1>{project.title}</h1>
+      <p>{project.subtitle}</p> 
+    </div> */}
+    </Card>
         ))
   
   return(
