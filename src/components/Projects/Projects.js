@@ -1,4 +1,5 @@
 import React from 'react';
+import './Projects.css'
 
 import { Layout, Row, Col, Card, Skeleton, Icon, Avatar } from "antd";
 
@@ -18,12 +19,13 @@ function Projects(props){
     {
       title: "China Med Device",
       subtitle: "HTML & CSS",
-      thumbUrl: './images/portfolio/pace-thumb.png',
+      thumbUrl: './images/portfolio/bowyer-thumb.png',
     },
-    // {
-    //   title: "SpooPy Notes",
-    //   subtitle: "Python / React JS"
-    // },
+    {
+      title: "SpooPy Notes",
+      subtitle: "Python / React JS",
+      thumbUrl: './images/portfolio/earthhealer-thumb.png',
+    },
     // {
     //   title: "Pynterest",
     //   subtitle: "Python / React JS"
@@ -32,46 +34,46 @@ function Projects(props){
 
 
   // https://codepen.io/pen/?&editable=true&editors=001
-  let Test = testData.map( (project) => (
-    <Card
-    hoverable
-    style={{ width: 400 }}
-    cover={<img alt={ project.title } src={ project.thumbUrl } />}
-  >
-    {/* <div>   
-      <h1>{project.title}</h1>
-      <p>{project.subtitle}</p> 
-    </div> */}
-    </Card>
+  let cardContent = testData.map( (project) => (
+    <Col span={6} align="middle">
+      <div className="project-card">
+        <img  
+          className="project-thumbnail" 
+          alt={ project.title } 
+          src={ project.thumbUrl } 
+        />
+        <div
+          className="project-hover"
+        >
+          {project.title} 
+          {project.subtitle}
+        </div>
+        {/* <Card
+          className="project-thumbnail"
+          cover={<img alt={ project.title } src={ project.thumbUrl } />}
+        >
+        </Card>
+        <Card
+          className="project-hover"
+          cover={<div> {project.title} {project.subtitle}</div>}
+        >
+        </Card> */}
+
+
+
+      </div>
+    </Col>
         ))
   
   return(
     <Layout>
       <Row className="content-wrapper">
-        <h1> My Projects</h1>
+        <h2> My Projects</h2>
       </Row>
-      <Row className="content-wrapper">
-        <Col span={2}></Col>
-        <Col span={10}> 
+      <Row type="flex" justify="center" className="content-wrapper">
 
-          {Test}
-          {/* <Card
-            style={{ width: 400, marginTop: 16 }}
-            actions={[
-              <Icon type="setting" key="setting" />,
-              <Icon type="edit" key="edit" />,
-              <Icon type="ellipsis" key="ellipsis" />,
-            ]}
-          >
-            <Skeleton loading={props.loading} active>
-              <Meta
-                title="Card title"
-                description="This is the description"
-              />
-            </Skeleton>
-          </Card> */}
-
-        </Col>
+        {cardContent}
+         
       </Row>
     </Layout>
   )
