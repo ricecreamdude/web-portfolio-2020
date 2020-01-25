@@ -1,11 +1,11 @@
 import React from 'react';
 import './Projects.css'
 
-import { Layout, Row, Col, Card, Skeleton, Icon, Avatar } from "antd";
+import { Layout, Row, Col, Card, Button, Icon, Avatar } from "antd";
 
 const { Meta } = Card;
 
-const { Header } = Layout;
+const { Header, Content } = Layout;
 
 function Projects(props){
 
@@ -45,9 +45,31 @@ function Projects(props){
         <div
           className="project-hover"
         >
-          {project.title} 
-          {project.subtitle}
+
+          <Row>
+            <Col>
+              <Content className="hover-text">
+
+                  <span className="hover-title">{project.title}</span> <br/>
+                  <span className="hover-subtitle">{project.subtitle}</span>
+
+              </Content>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="hover-subtitle">
+              <Button
+                type="normal"
+                size="large"
+                className="project-button"
+              >
+                LEARN MORE
+              </Button>
+            </Col>
+          </Row>
         </div>
+
+
         {/* <Card
           className="project-thumbnail"
           cover={<img alt={ project.title } src={ project.thumbUrl } />}
