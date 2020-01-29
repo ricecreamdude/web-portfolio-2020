@@ -1,7 +1,10 @@
 import React from 'react';
+
 import './Projects.css'
 
 import { Layout, Row, Col, Card, Button, Icon, Avatar } from "antd";
+import ProjectModal from './ProjectModal';
+
 
 const { Meta } = Card;
 
@@ -15,17 +18,28 @@ function Projects(props){
       title: "Cleareview",
       subtitle: "Vue JS / VueX",
       thumbUrl: './images/portfolio/pace-thumb.png',
+      modalData: {
+        title: "Cleareview Web Application",
+        subtitle: "Medical Legal Litgation Services",
+        description: "Cleareview, Inc. was started by a radiologist to address the issue of bias in expert witness testimony.",
+        url: "https://www.cleareview.com/",
+      }
     },
     {
       title: "China Med Device",
       subtitle: "HTML & CSS",
       thumbUrl: './images/portfolio/bowyer-thumb.png',
+      modalData: {
+        title: "China Med Device",
+        subtitle: "Medical Device Market Entry Solutions",
+        description: "Providing turn-key solutions for Western medical device & In-Vitro Diagnostic companies with NMPA (CFDA) regulatory and commercialization services in China."
+      }
     },
-    {
-      title: "SpooPy Notes",
-      subtitle: "Python / React JS",
-      thumbUrl: './images/portfolio/earthhealer-thumb.png',
-    },
+    // {
+    //   title: "SpooPy Notes",
+    //   subtitle: "Python / React JS",
+    //   thumbUrl: './images/portfolio/earthhealer-thumb.png',
+    // },
     // {
     //   title: "Pynterest",
     //   subtitle: "Python / React JS"
@@ -45,46 +59,27 @@ function Projects(props){
         <div
           className="project-hover"
         >
-
           <Row>
             <Col>
               <Content className="hover-text">
-
                   <span className="hover-title">{project.title}</span> <br/>
                   <span className="hover-subtitle">{project.subtitle}</span>
-
               </Content>
             </Col>
           </Row>
           <Row>
             <Col className="hover-subtitle">
-              <Button
-                type="normal"
-                size="large"
-                className="project-button"
+              <ProjectModal
+                modalData={project.modalData}
               >
-                LEARN MORE
-              </Button>
+              </ProjectModal>
             </Col>
           </Row>
         </div>
 
-
-        {/* <Card
-          className="project-thumbnail"
-          cover={<img alt={ project.title } src={ project.thumbUrl } />}
-        >
-        </Card>
-        <Card
-          className="project-hover"
-          cover={<div> {project.title} {project.subtitle}</div>}
-        >
-        </Card> */}
-
-
-
       </div>
     </Col>
+    
         ))
   
   return(
