@@ -100,21 +100,23 @@ function Projects(props){
         <div
           className="project-hover"
         >
-          <Row>
-            <Col>
-              <Content className="hover-text">
-                  <span className="hover-title">{project.title}</span> <br/>
-                  <span className="hover-subtitle">{project.subtitle}</span>
-              </Content>
-            </Col>
-          </Row>
-          <Row>
-            <Col className="hover-subtitle">
-              <ProjectModal
-                modalData={project.modalData}
-              >
-              </ProjectModal>
-            </Col>
+          <Row align="middle">
+            <Row>
+              <Col>
+                <Content className="hover-text">
+                    <span className="hover-title">{project.title}</span> <br/>
+                    <span className="hover-subtitle">{project.subtitle}</span>
+                </Content>
+              </Col>
+            </Row>
+            <Row >
+              <Col className="hover-subtitle">
+                <ProjectModal
+                  modalData={project.modalData}
+                >
+                </ProjectModal>
+              </Col>
+            </Row>
           </Row>
         </div>
 

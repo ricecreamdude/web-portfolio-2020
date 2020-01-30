@@ -69,11 +69,13 @@
 }
 
 .modal-container {
-  min-width: 800px;
+  min-width: 850px;
 }
 
 .modal-container img {
   height: 55vh;
+  min-height: 450px;
+  /* min-width: 850px; */
   /* max-height: 60vh; */
   width: 100%;
 }
