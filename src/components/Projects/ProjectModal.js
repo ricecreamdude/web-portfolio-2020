@@ -56,7 +56,6 @@ export default class ProjectModal extends React.Component {
           onCancel={this.handleCancel}
           style={{ top: '2vh' }}
 
-
           cancelText="Close"
           okText="See Project"
 
@@ -65,12 +64,12 @@ export default class ProjectModal extends React.Component {
         >
             <img  
               alt={this.props.modalData.title}
-
-              src='./images/portfolio/drbowyer_modal.png'
+              src={this.props.modalData.imgUrl}
             />
             <section>
               <h3>{this.props.modalData.title} </h3>
               <h4>{this.props.modalData.subtitle}</h4>
+              <hr />
               <p>{this.props.modalData.description}</p>
             </section>
         </Modal>

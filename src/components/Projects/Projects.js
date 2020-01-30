@@ -14,44 +14,78 @@ function Projects(props){
 
 
   let testData = [
-    {
-      title: "Cleareview",
-      subtitle: "VueJS / VueX",
-      thumbUrl: './images/portfolio/pace-thumb.png',
-      modalData: {
-        title: "Cleareview Web Application",
-        subtitle: "Medical Legal Litgation Services",
-        description: "Cleareview, Inc. was started by a radiologist to address the issue of bias in expert witness testimony.",
-        url: "https://www.cleareview.com/",
-      }
-    },
-    {
-      title: "China Med Device",
-      subtitle: "WordPress, HTML/CSS",
-      thumbUrl: './images/portfolio/bowyer-thumb.png',
-      modalData: {
-        title: "China Med Device",
-        subtitle: "Medical Device Market Entry Solutions",
-        description: "Providing turn-key solutions for Western medical device & In-Vitro Diagnostic companies with NMPA (CFDA) regulatory and commercialization services in China.",
-        url: "https://www.chinameddevice.com" 
-      }
-    },
-    {
-      title: "Dermatology Arts",
-      subtitle: "Squarespace, HTML/CSS",
-      thumbUrl: './images/portfolio/earthhealer-thumb.png',
-      modalData: {
-        title: "Dermatology Arts",
-        subtitle: "Local Medical Services Website",
-        description: "A friendly, caring, modern dermatology practice in Bellevue focused on real medical and surgical skin needs.",
-        url: "https://dermatologyarts.com/"
 
+    {
+      title: "Dr. Bowyer ",
+      subtitle: "WordPress, HTML/CSS",
+      thumbUrl: './images/portfolio/bowyer_thumb.png',
+      modalData: {
+        title: "Dr. Bowyer",
+        subtitle: "DENTAL SERVICES",
+        description: "Worked with a designer to develop a custom multi-page website. Managed web hosting, domain registration, and website theme modifications",
+        url: "https://www.drbowyer.com/",
+        imgUrl: "./images/portfolio/bowyer_modal.png"
       }
     },
+    {
+      title: "Earth Healer",
+      subtitle: "Squarespace, HTML/CSS",
+      thumbUrl: './images/portfolio/earthhealer_thumb.png',
+      modalData: {
+        title: "Earth Healer",
+        subtitle: "GARDENING CLASSES AND TIPS",
+        description: "Worked with a designer to develop a custom multi-page website. Managed web hosting, domain registration, and website theme modifications",
+        url: "https://earthhealerllc.com/",
+        imgUrl: "./images/portfolio/earthhealer_modal.jpeg"
+      }
+    },
+    {
+      title: "PACE Staffing Network",
+      subtitle: "WordPress, HTML/CSS",
+      thumbUrl: './images/portfolio/pace_thumb.png',
+      modalData: {
+        title: "PACE Staffing Network",
+        subtitle: "STAFFING SERVICES IN THE NORTHWEST",
+        description: "A local temporary staffing and direct hire recruiting agency. Crafted serveral pages by hand using custom HTML/CSS.",
+        url: "https://www.pacestaffing.com/",
+        imgUrl: './images/portfolio/pace_modal.jpg'
+      }
+    },
+        // {
+    //   title: "Cleareview",
+    //   subtitle: "VueJS / VueX",
+    //   thumbUrl: './images/portfolio/pace_thumb.png',
+    //   modalData: {
+    //     title: "Cleareview",
+    //     subtitle: "MEDICAL LITIGATION SERVICES",
+    //     description: "Cleareview, Inc. was started by a radiologist to address the issue of bias in expert witness testimony.",
+    //     url: "https://www.cleareview.com/",
+    //     imgUrl: ""
+    //   }
+    // },
     // {
-    //   title: "Pynterest",
-    //   subtitle: "Python / React JS"
-    // }
+    //   title: "China Med Device",
+    //   subtitle: "WordPress, HTML/CSS",
+    //   thumbUrl: './images/portfolio/cmd_logo.png',
+    //   modalData: {
+    //     title: "China Med Device",
+    //     subtitle: "MEDICAL DEVICE MARKET ENTRY SOLUTIONS",
+    //     description: "Providing turn-key solutions for Western medical device & In-Vitro Diagnostic companies with NMPA (CFDA) regulatory and commercialization services in China.",
+    //     url: "https://www.chinameddevice.com" 
+    //   }
+    // },
+    // {
+    //   title: "Dermatology Arts",
+    //   subtitle: "Squarespace, HTML/CSS",
+    //   thumbUrl: './images/portfolio/earthhealer_thumb.png',
+    //   modalData: {
+    //     title: "Dermatology Arts",
+    //     subtitle: "LOCAL DERMATOLOGY SERVICES",
+    //     description: "A friendly, caring, modern dermatology practice in Bellevue focused on real medical and surgical skin needs.",
+    //     url: "https://dermatologyarts.com/",
+    //     imgUrl: "./images/portfolio/dermatology_arts.png"
+    //   }
+    // },
   ];
 
   // https://codepen.io/pen/?&editable=true&editors=001
@@ -91,7 +125,7 @@ function Projects(props){
   return(
     <Layout>
       <Row className="content-wrapper">
-        <h2> My Projects</h2>
+        <h2> Portfolio </h2>
       </Row>
       <Row type="flex" justify="center" className="content-wrapper">
         {cardContent}
