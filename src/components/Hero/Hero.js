@@ -7,16 +7,12 @@ const { Content } = Layout;
 
 function Hero(){
 
-
-
   return (
     <Layout>
       <Row>
         <Col span={24} >
           <Content className="hero-component">
-            
             <div className="hero-content">
-
               <p className="hero-text">Hello. I'm <span className="hero-name">Joshua Ho</span>. <br />
                 I'm a full stack web developer.</p>
               <Button
@@ -26,7 +22,6 @@ function Hero(){
               >
                 See My Work
               </Button>
-
             </div>
           </Content>
         </Col>
@@ -34,6 +29,5 @@ function Hero(){
     </Layout>
   );
 }
-
 
 export default Hero;
