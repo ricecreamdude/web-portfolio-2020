@@ -54,13 +54,25 @@ export default class ProjectModal extends React.Component {
           visible={this.state.visible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}
-          
+          style={{ top: '2vh' }}
+
+
           cancelText="Close"
           okText="See Project"
+
+          width="50vw"
+          className="modal-container"
         >
-          <p>{this.props.modalData.description}</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
+            <img  
+              alt={this.props.modalData.title}
+
+              src='./images/portfolio/drbowyer_modal.png'
+            />
+            <section>
+              <h3>{this.props.modalData.title} </h3>
+              <h4>{this.props.modalData.subtitle}</h4>
+              <p>{this.props.modalData.description}</p>
+            </section>
         </Modal>
       </div>
     )

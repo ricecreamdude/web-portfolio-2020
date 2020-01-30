@@ -16,7 +16,7 @@ function Projects(props){
   let testData = [
     {
       title: "Cleareview",
-      subtitle: "Vue JS / VueX",
+      subtitle: "VueJS / VueX",
       thumbUrl: './images/portfolio/pace-thumb.png',
       modalData: {
         title: "Cleareview Web Application",
@@ -27,29 +27,36 @@ function Projects(props){
     },
     {
       title: "China Med Device",
-      subtitle: "HTML & CSS",
+      subtitle: "WordPress, HTML/CSS",
       thumbUrl: './images/portfolio/bowyer-thumb.png',
       modalData: {
         title: "China Med Device",
         subtitle: "Medical Device Market Entry Solutions",
-        description: "Providing turn-key solutions for Western medical device & In-Vitro Diagnostic companies with NMPA (CFDA) regulatory and commercialization services in China."
+        description: "Providing turn-key solutions for Western medical device & In-Vitro Diagnostic companies with NMPA (CFDA) regulatory and commercialization services in China.",
+        url: "https://www.chinameddevice.com" 
       }
     },
-    // {
-    //   title: "SpooPy Notes",
-    //   subtitle: "Python / React JS",
-    //   thumbUrl: './images/portfolio/earthhealer-thumb.png',
-    // },
+    {
+      title: "Dermatology Arts",
+      subtitle: "Squarespace, HTML/CSS",
+      thumbUrl: './images/portfolio/earthhealer-thumb.png',
+      modalData: {
+        title: "Dermatology Arts",
+        subtitle: "Local Medical Services Website",
+        description: "A friendly, caring, modern dermatology practice in Bellevue focused on real medical and surgical skin needs.",
+        url: "https://dermatologyarts.com/"
+
+      }
+    },
     // {
     //   title: "Pynterest",
     //   subtitle: "Python / React JS"
     // }
   ];
 
-
   // https://codepen.io/pen/?&editable=true&editors=001
   let cardContent = testData.map( (project) => (
-    <Col span={6} align="middle">
+    <Col xs={18} sm={18} md={18} lg={6} xl={6} align="middle">
       <div className="project-card">
         <img  
           className="project-thumbnail" 
@@ -79,8 +86,7 @@ function Projects(props){
 
       </div>
     </Col>
-    
-        ))
+  ))
   
   return(
     <Layout>
@@ -88,9 +94,7 @@ function Projects(props){
         <h2> My Projects</h2>
       </Row>
       <Row type="flex" justify="center" className="content-wrapper">
-
         {cardContent}
-         
       </Row>
     </Layout>
   )

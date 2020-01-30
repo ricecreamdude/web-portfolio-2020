@@ -14,8 +14,6 @@
 
 .project-hover{
   /* effects */
-
-  
   opacity: 0;
   z-index: 10;
   background-color: #F0F2F5 ;
@@ -66,6 +64,37 @@
   border: 3px solid #E31C6E;
 }
 
-/* .ant-modal-header {
+.ant-modal-header, .ant-modal-close {
   display: none;
-} */
+}
+
+.modal-container {
+  min-width: 800px;
+}
+
+.modal-container img {
+  height: 55vh;
+  /* max-height: 60vh; */
+  width: 100%;
+}
+
+.modal-container section {
+  height: 24vh;
+  margin-top: 20px;
+  max-height: 35vh;
+  width: 100%;
+}
+
+.modal-container section h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.modal-container section h4 {
+  font-size: 20px;
+}
+
+.modal-container section p {
+  font-size: 16px;
+}
